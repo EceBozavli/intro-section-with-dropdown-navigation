@@ -1,0 +1,239 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: 1440px;
+  background-color: #FAFAFA;
+  font-family: 'Epilogue';
+}
+
+.footer {
+  display: flex;
+  gap: 63px;
+  padding-inline: 41px;
+  padding-top: 33px;
+  margin-bottom: 67px;
+  justify-content: space-between;
+}
+
+.nav {
+  color: #151515;
+  display: flex;
+  gap: 40px;
+  list-style: no;
+  padding: 0;
+}
+.nav li{
+  display: inline-block;
+  position: relative; 
+}
+
+.nav a {
+  display: inline-block;
+  /* background-color: lightcoral; */
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #686868;
+  font-weight: bold;
+}
+/* .features-inner {
+  width: 153px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  border-radius: 15px;
+  color: #686868;
+} */
+
+ .nav ul li:hover a, .nav .active { 
+   width: 153px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  border-radius: 15px;
+  color: #686868;
+} 
+.nav ul{
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style: none;
+}
+.nav ul a{
+  width: 153px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  border-radius: 15px;
+  color: #686868;
+
+}
+.nav li:hover ul{
+  display: block;
+}
+.nav ul li {
+  display: list-item;
+}  
+
+
+/* .footer-inner{
+  display: flex;
+  justify-content: space-between;
+  gap: 653px;
+  margin-bottom: 67px;
+  
+}
+
+.footer-inner li {
+  list-style-type: none;
+}
+.footer-inner a {
+  text-decoration: none;
+  color: #686868;
+}
+
+.inner-first {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+
+} */
+.inner-last {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.inner-last a {
+  text-decoration: none;
+  color: #686868;
+}
+.button-register {
+  padding-block: 13px;
+  padding-left: 23px;
+  padding-right: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  border-radius: 15px;
+  border: 1.5px solid #686868
+  
+
+}
+
+.hero {
+  display: flex;
+  gap: 125px;
+}
+
+.hero {
+  margin-top: 67px; 
+  margin-left: 165px;
+  margin-right: 130px;
+  margin-bottom: 130px;
+}
+
+.hero-texts {
+  padding-top: 140px;
+}
+
+h1 {
+  margin-bottom: 48px; 
+  width: 540px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: left;
+} 
+
+p { 
+  margin-bottom: 51px;
+  width: 445px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #686868;
+}
+
+.button {
+  margin-bottom: 108px;
+  color: #FAFAFA;
+  background-color: #151515;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  text-align: center;
+  width: 163px;
+  height: 56px;
+  padding: 15px 28px 13px 31px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.button:hover {
+  color: #151515;
+  background-color: #FAFAFA;
+}
+
+.companies {
+  margin-top: 108px;
+  display: flex;
+  gap: 40.48px;
+  list-style-type: none;
+}
+
+.hero-img {
+  width: 480px;
+  height: 640px;
+  margin-bottom: 130px;
+}
